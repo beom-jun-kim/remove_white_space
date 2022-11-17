@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title></title>
+  </head>
+  <body>
+
+    <div class="box">
+      <p>hello world!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hello world!</p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $('.box p').each(function(){
+            $(this).html($(this).html().replace(/&nbsp;/gi,' '));
+        });
+      });
+    </script>
+  </body>
+</html>
